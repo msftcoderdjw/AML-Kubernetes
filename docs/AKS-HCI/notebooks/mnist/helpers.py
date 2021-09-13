@@ -73,8 +73,8 @@ def run(cmd, return_output=False, no_output=False, retry_count=0):
         cmd = cmd.replace("\n", " ")
 
     # shlex.split is required on bash and for Windows paths with spaces
-    #
-    cmd_actual = shlex.split(cmd)
+    # https://github.com/jrnl-org/jrnl/issues/348
+    cmd_actual = shlex.split(cmd, posix="win" not in sys.platform)
 
     # Store this (i.e. kubectl, python etc.) to support binary context aware retries
     #
