@@ -7,7 +7,7 @@ traffic:
 deployments:
   - name: blue
     app_insights_enabled: true
-    model: azureml:sklearn_mnist:2
+    model: azureml:sklearn_mnist:4
     code_configuration:
       code: 
         local_path: ./

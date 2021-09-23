@@ -1,0 +1,13 @@
+apiVersion: v1
+data:
+  mounts.yaml: |
+    mountPoints:
+    - mountPath: /nfs_share
+      mountType: nfs
+      name: amlarc-nfs-share-0
+      path: /data
+      server: 10.156.95.38
+kind: ConfigMap
+metadata:
+  name: mount-config
+  namespace: azureml
