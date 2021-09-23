@@ -1,13 +1,13 @@
 type: online
 auth_mode: aml_token
-target: azureml:amlarc-compute4
+target: azureml:amlarc-compute
 traffic:
   blue: 100
 
 deployments:
   - name: blue
     app_insights_enabled: true
-    model: azureml:sklearn_mnist:4
+    model: azureml:sklearn_mnist:1
     code_configuration:
       code: 
         local_path: ./
