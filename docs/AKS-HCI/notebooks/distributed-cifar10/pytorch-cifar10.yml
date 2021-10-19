@@ -1,25 +1,25 @@
 type: online
 auth_mode: aml_token
-target: azureml:amlarc-compute
+target: <compute-id>
 traffic:
-  blue: 100
+  cifartorchservice: 100
 
 deployments:
-  - name: blue
+  - name: cifartorchservice
     app_insights_enabled: true
-    model: azureml:sklearn_mnist:3
+    model: <model-id>
     code_configuration:
       code: 
         local_path: ./
-      scoring_script: score.py
-    instance_type: defaultInstanceType
+      scoring_script: score_pytorch.py
+    instance_type: <instanceTypeName>
     environment: 
       name: sklearn-mnist-env
       version: 1
       path: .
-      conda_file: file:./model/conda.yml
+      conda_file: file:./pytorch-script/conda_dependencies.yml
       docker:
-        image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:20210727.v1
+        image: mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04:20210806.v1
     scale_settings:
       scale_type: manual
       instance_count: 1
