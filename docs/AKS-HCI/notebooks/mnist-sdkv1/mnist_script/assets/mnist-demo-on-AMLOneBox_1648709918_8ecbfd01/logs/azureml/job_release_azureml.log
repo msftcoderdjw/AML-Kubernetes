@@ -1,0 +1,31 @@
+2022-03-31 07:03:01,078|azureml|DEBUG|Execute Job Release Inputs:: kwargs: {'disable_output_upload': True}, track_folders: None, deny_list: None, directories_to_watch: []
+2022-03-31 07:03:01,080|azureml.history._tracking.PythonWorkingDirectory|DEBUG|Execution target type: batchai
+2022-03-31 07:03:01,080|azureml.history._tracking.PythonWorkingDirectory|DEBUG|Failed to import pyspark with error: No module named 'pyspark'
+2022-03-31 07:03:01,080|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Pinning working directory for filesystems: ['pyfs']
+2022-03-31 07:03:01,082|azureml.core.run|DEBUG|Identity in use is not set. Falling back to using AMLToken
+2022-03-31 07:03:01,082|azureml.core.run|DEBUG|Using AMLToken auth for remote run
+2022-03-31 07:03:01,087|azureml.core.authentication.TokenRefresherDaemon|DEBUG|Starting daemon and triggering first instance
+2022-03-31 07:03:01,094|azureml._restclient.clientbase|INFO|Created a worker pool for first use
+2022-03-31 07:03:01,094|azureml.core.authentication|DEBUG|Time to expire 1814147.905098 seconds
+2022-03-31 07:03:01,095|azureml._restclient.service_context|DEBUG|Created a static thread pool for ServiceContext class
+2022-03-31 07:03:01,095|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: http://host.docker.internal:30000.
+2022-03-31 07:03:01,095|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: http://host.docker.internal:30000.
+2022-03-31 07:03:01,095|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: http://host.docker.internal:30000.
+2022-03-31 07:03:01,095|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: http://host.docker.internal:30000.
+2022-03-31 07:03:01,096|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: http://host.docker.internal:30000.
+2022-03-31 07:03:01,096|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: http://host.docker.internal:30000.
+2022-03-31 07:03:01,096|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: http://host.docker.internal:30000.
+2022-03-31 07:03:01,222|azureml._SubmittedRun#mnist-demo-on-AMLOneBox_1648709918_8ecbfd01.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[START]
+2022-03-31 07:03:01,222|azureml._SubmittedRun#mnist-demo-on-AMLOneBox_1648709918_8ecbfd01.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling get_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2022-03-31 07:03:01,961|azureml._SubmittedRun#mnist-demo-on-AMLOneBox_1648709918_8ecbfd01.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[STOP]
+2022-03-31 07:03:01,962|azureml._SubmittedRun#mnist-demo-on-AMLOneBox_1648709918_8ecbfd01|DEBUG|Constructing run from dto. type: azureml.scriptrun, source: None, props: {'_azureml.ComputeTargetType': 'kubernetes', 'ContentSnapshotId': '089fab6b-35c3-4bce-952f-3cbce4a3430a', 'azureml.git.repository_uri': 'https://github.com/Azure/AML-Kubernetes.git', 'mlflow.source.git.repoURL': 'https://github.com/Azure/AML-Kubernetes.git', 'azureml.git.branch': 'master', 'mlflow.source.git.branch': 'master', 'azureml.git.commit': '8210189878e55a77933ea8d4a39e862233e04474', 'mlflow.source.git.commit': '8210189878e55a77933ea8d4a39e862233e04474', 'azureml.git.dirty': 'True', 'ProcessInfoFile': 'azureml-logs/process_info.json', 'ProcessStatusFile': 'azureml-logs/process_status.json', 'JobType': 'RegularJob', 'GpuCount': '0', 'Cluster': 'jiadu-ashk8s'}
+2022-03-31 07:03:01,963|azureml._SubmittedRun#mnist-demo-on-AMLOneBox_1648709918_8ecbfd01.RunContextManager|DEBUG|Valid logs dir, setting up content loader
+2022-03-31 07:03:01,963|azureml.WorkerPool|DEBUG|[START]
+2022-03-31 07:03:01,963|azureml.TrackFolders|DEBUG|[START]
+2022-03-31 07:03:01,963|azureml|DEBUG|Executing history release.
+2022-03-31 07:03:01,963|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Uploading tracked directories: [], excluding ['azureml-logs/driver_log']
+2022-03-31 07:03:01,964|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Calling track for pyfs
+2022-03-31 07:03:01,964|azureml.TrackFolders|DEBUG|[STOP]
+2022-03-31 07:03:01,964|azureml.HistoryTrackingWorkerPool.WorkerPoolShutdown|DEBUG|[START]
+2022-03-31 07:03:01,964|azureml.HistoryTrackingWorkerPool.WorkerPoolShutdown|DEBUG|[STOP]
+2022-03-31 07:03:01,964|azureml.WorkerPool|DEBUG|[STOP]
