@@ -1,0 +1,23 @@
+[2022-03-31T12:45:46.833863] Entering job preparation.
+Cannot provide tracer without any exporter configured.
+[2022-03-31T12:45:47.366427] Starting job preparation.
+[2022-03-31T12:45:47.366457] Extracting the control code.
+[2022-03-31T12:45:47.366577] Starting extract_project.
+[2022-03-31T12:45:47.366601] Starting to extract zip file.
+[2022-03-31T12:45:47.372243] Finished extracting zip file.
+[2022-03-31T12:45:47.376123] Using urllib.request Python 3.0 or later
+[2022-03-31T12:45:47.376154] Start fetching snapshots.
+[2022-03-31T12:45:47.376182] Start fetching snapshot.
+[2022-03-31T12:45:47.376191] Retrieving snapshot metadata with credentials: c908ddaf-2737-40d8-982b-bb64006b0205
+Starting the daemon thread to refresh tokens in background for process with pid = 574
+[2022-03-31T12:45:48.721432] Retrieving project from snapshot: c908ddaf-2737-40d8-982b-bb64006b0205
+[2022-03-31T12:46:04.222683] Finished fetching snapshot.
+[2022-03-31T12:46:04.222714] Finished fetching snapshots.
+[2022-03-31T12:46:04.222720] Finished extract_project.
+[2022-03-31T12:46:04.222754] Finished fetching and extracting the control code.
+[2022-03-31T12:46:04.226061] downloadDataStore - Download from datastores if requested.
+[2022-03-31T12:46:04.227830] Start run_history_prep.
+[2022-03-31T12:46:04.232204] Entering context manager injector.
+Cannot provide tracer without any exporter configured.
+[2022-03-31T12:46:04.236804] downloadDataStore completed
+[2022-03-31T12:46:04.238393] Job preparation is complete.

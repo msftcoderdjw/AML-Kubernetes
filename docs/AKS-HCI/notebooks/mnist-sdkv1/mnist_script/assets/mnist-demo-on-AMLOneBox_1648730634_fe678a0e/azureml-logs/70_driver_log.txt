@@ -1,0 +1,25 @@
+[2022-03-31T12:46:04.324547] Entering context manager injector.
+Cannot provide tracer without any exporter configured.
+[2022-03-31T12:46:04.835343] context_manager_injector.py Command line Options: Namespace(inject=['ProjectPythonPath:context_managers.ProjectPythonPath', 'RunHistory:context_managers.RunHistory', 'TrackUserError:context_managers.TrackUserError'], invocation=['train.py', '--data-folder', '/nfs_share/mnist', '--regularization', '0.5'])
+This is an MPI job. Rank:0
+Script type = None
+[2022-03-31T12:46:04.838735] Entering Run History Context Manager.
+[2022-03-31T12:46:06.299682] Current directory: /workspaceblobstore/azureml/mnist-demo-on-AMLOneBox_1648730634_fe678a0e
+[2022-03-31T12:46:06.299707] Preparing to call script [train.py] with arguments:['--data-folder', '/nfs_share/mnist', '--regularization', '0.5']
+[2022-03-31T12:46:06.299718] After variable expansion, calling script [train.py] with arguments:['--data-folder', '/nfs_share/mnist', '--regularization', '0.5']
+
+Data folder: /nfs_share/mnist
+(60000, 784)
+(60000,)
+(10000, 784)
+(10000,)
+Train a logistic regression model with regularization rate of 0.5
+Predict the test set
+Accuracy is 0.9193
+
+
+[2022-03-31T12:48:28.721419] The experiment completed successfully. Finalizing run...
+Cleaning up all outstanding Run operations, waiting 300.0 seconds
+2 items cleaning up...
+Cleanup took 2.0738368034362793 seconds
+[2022-03-31T12:48:32.921815] Finished context manager injector.

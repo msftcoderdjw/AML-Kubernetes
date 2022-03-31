@@ -1,0 +1,21 @@
+2022-03-31 12:46:39 2022-03-31 12:46:28,715 [INFO] root: load config from env successfully
+2022-03-31 12:46:39 2022-03-31 12:46:38,564 [INFO] root: register artifacts: ['/azureml-logs/azureml/job_log_agent.log.d39ef8ae0967a84478e4a6e07debd317-master-0'], status_code: 200
+2022-03-31 12:46:39 2022-03-31 12:46:39,933 [INFO] root: watch streamable file /root/job_log_agent.log, will upload to /azureml-logs/azureml/job_log_agent.log.d39ef8ae0967a84478e4a6e07debd317-master-0
+2022-03-31 12:46:39 2022-03-31 12:46:39,933 [INFO] root: check if target file /var/log/compute/00_stdout.txt exist, if not, waitting...
+2022-03-31 12:46:45 2022-03-31 12:46:45,263 [INFO] root: register artifacts: ['/azureml-logs/55_azureml-execution-tvmps_d39ef8ae0967a84478e4a6e07debd317-master-0_d.txt'], status_code: 200
+2022-03-31 12:46:45 2022-03-31 12:46:45,808 [INFO] root: watch streamable file /var/log/compute/00_stdout.txt, will upload to /azureml-logs/55_azureml-execution-tvmps_d39ef8ae0967a84478e4a6e07debd317-master-0_d.txt
+2022-03-31 12:46:45 2022-03-31 12:46:45,808 [INFO] root: /var/log/compute/services folder does not exist, creating it with mod 777...
+2022-03-31 12:46:54 2022-03-31 12:46:53,194 [INFO] root: register artifacts: ['/logs/azureml/master_591_azureml.log'], status_code: 200
+2022-03-31 12:46:54 2022-03-31 12:46:53,738 [INFO] root: watch streamable file /workspaceblobstore/azureml/mnist-demo-on-AMLOneBox_1648730634_fe678a0e/logs/azureml/master_591_azureml.log, will upload to /logs/azureml/master_591_azureml.log
+2022-03-31 12:47:00 2022-03-31 12:46:59,179 [INFO] root: register artifacts: ['/logs/azureml/job_prep_azureml.log'], status_code: 200
+2022-03-31 12:47:00 2022-03-31 12:46:59,726 [INFO] root: watch streamable file /workspaceblobstore/azureml/mnist-demo-on-AMLOneBox_1648730634_fe678a0e/logs/azureml/job_prep_azureml.log, will upload to /logs/azureml/job_prep_azureml.log
+2022-03-31 12:47:06 2022-03-31 12:47:05,212 [INFO] root: register artifacts: ['/azureml-logs/65_job_prep-tvmps_d39ef8ae0967a84478e4a6e07debd317-master-0_d.txt'], status_code: 200
+2022-03-31 12:47:06 2022-03-31 12:47:05,757 [INFO] root: watch streamable file /var/log/compute/local_logs/65_job_prep-tvmps_d39ef8ae0967a84478e4a6e07debd317-master-0_d.txt, will upload to /azureml-logs/65_job_prep-tvmps_d39ef8ae0967a84478e4a6e07debd317-master-0_d.txt
+2022-03-31 12:47:12 2022-03-31 12:47:11,186 [INFO] root: register artifacts: ['/azureml-logs/70_driver_log.txt'], status_code: 200
+2022-03-31 12:47:12 2022-03-31 12:47:11,732 [INFO] root: watch streamable file /var/log/compute/local_logs/70_driver_log.txt, will upload to /azureml-logs/70_driver_log.txt
+2022-03-31 12:47:31 2022-03-31 12:47:31,257 [INFO] root: upload content for /root/job_log_agent.log, size 2644
+2022-03-31 12:47:46 2022-03-31 12:47:43,389 [INFO] root: upload content for /var/log/compute/00_stdout.txt, size 15187
+2022-03-31 12:47:52 2022-03-31 12:47:51,060 [INFO] root: upload content for /workspaceblobstore/azureml/mnist-demo-on-AMLOneBox_1648730634_fe678a0e/logs/azureml/master_591_azureml.log, size 9786
+2022-03-31 12:47:55 2022-03-31 12:47:54,038 [INFO] root: upload content for /workspaceblobstore/azureml/mnist-demo-on-AMLOneBox_1648730634_fe678a0e/logs/azureml/job_prep_azureml.log, size 75
+2022-03-31 12:48:01 2022-03-31 12:48:00,069 [INFO] root: upload content for /var/log/compute/local_logs/65_job_prep-tvmps_d39ef8ae0967a84478e4a6e07debd317-master-0_d.txt, size 1499
+2022-03-31 12:48:07 2022-03-31 12:48:06,049 [INFO] root: upload content for /var/log/compute/local_logs/70_driver_log.txt, size 1134

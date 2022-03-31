@@ -1,0 +1,207 @@
+2022-03-31 12:46:45 ++ dirname /amlarc-scripts/bootstrap_headless.sh
+2022-03-31 12:46:45 + CWD=/amlarc-scripts
+2022-03-31 12:46:45 + AMLARC_LAUNCHER_ROLE_NAME=ps
+2022-03-31 12:46:45 + hostname
+2022-03-31 12:46:45 default-d39ef8ae0967a84478e4a6e07debd317-master-0
+2022-03-31 12:46:45 + whoami
+2022-03-31 12:46:45 root
+2022-03-31 12:46:45 + source /amlarc-scripts/export_runtime_env.sh
+2022-03-31 12:46:45 ++ set -ex
+2022-03-31 12:46:45 ++ [[ -z [a-zA-Z0-9]*-([a-zA-Z]*)-([0-9]*) ]]
+2022-03-31 12:46:45 +++ hostname
+2022-03-31 12:46:45 ++ [[ default-d39ef8ae0967a84478e4a6e07debd317-master-0 =~ [a-zA-Z0-9]*-([a-zA-Z]*)-([0-9]*) ]]
+2022-03-31 12:46:45 ++ AMLARC_ROLE=master
+2022-03-31 12:46:45 ++ AMLARC_TASK_INDEX=0
+2022-03-31 12:46:45 ++ [[ -z master ]]
+2022-03-31 12:46:45 ++ [[ -z 0 ]]
+2022-03-31 12:46:45 ++ export AML_TASK_INDEX=0
+2022-03-31 12:46:45 ++ AML_TASK_INDEX=0
+2022-03-31 12:46:45 ++ export AMLARC_ROLE_IDX=0
+2022-03-31 12:46:45 ++ AMLARC_ROLE_IDX=0
+2022-03-31 12:46:45 ++ export NODE_RANK=0
+2022-03-31 12:46:45 ++ NODE_RANK=0
+2022-03-31 12:46:45 ++ [[ -z master ]]
+2022-03-31 12:46:45 ++ set +ex
+2022-03-31 12:46:45 no proxy cert specified; skip update-ca-certificates
+2022-03-31 12:46:45 03/31/2022 12:45:35 PM - setup_patches - WARNING - cannot import nimbusml, this may cause an error of AutoML runs.
+2022-03-31 12:46:45 + dirname /amlarc-runtime/install.sh
+2022-03-31 12:46:45 + cwd=/amlarc-runtime
+2022-03-31 12:46:45 + ssh_root=/amlarc-runtime/ssh_build/usr
+2022-03-31 12:46:45 + mkdir -p /usr/etc
+2022-03-31 12:46:45 + cp /amlarc-runtime/ssh_build/usr/etc/moduli /amlarc-runtime/ssh_build/usr/etc/ssh_config /amlarc-runtime/ssh_build/usr/etc/sshd_config /usr/etc
+2022-03-31 12:46:45 + cp /amlarc-runtime/ssh_config/sshd/sshd_config /usr/etc/sshd_config
+2022-03-31 12:46:45 + [  = enabled ]
+2022-03-31 12:46:45 + cp /dev/null /usr/etc/sshd_banner
+2022-03-31 12:46:45 + cp /amlarc-runtime/ssh_config/init.d/ssh /etc/init.d
+2022-03-31 12:46:45 + cp /amlarc-runtime/ssh_config/default/ssh /etc/default
+2022-03-31 12:46:45 + chmod +x /etc/init.d/ssh
+2022-03-31 12:46:45 + cp -r /amlarc-runtime/ssh_build/usr/bin /amlarc-runtime/ssh_build/usr/sbin /amlarc-runtime/ssh_build/usr/lib /amlarc-runtime/ssh_build/usr/libexec /usr/
+2022-03-31 12:46:45 + [ -d /usr/job-ssh-keys ]
+2022-03-31 12:46:45 + cp /usr/job-ssh-keys/rsa-private /usr/etc/ssh_host_rsa_key
+2022-03-31 12:46:45 + cp /usr/job-ssh-keys/rsa-public /usr/etc/ssh_host_rsa_key.pub
+2022-03-31 12:46:45 + cp /usr/job-ssh-keys/ecdsa-private /usr/etc/ssh_host_ecdsa_key
+2022-03-31 12:46:45 cp: cannot stat '/usr/job-ssh-keys/ecdsa-private': No such file or directory
+2022-03-31 12:46:45 + cp /usr/job-ssh-keys/ecdsa-public /usr/etc/ssh_host_ecdsa_key.pub
+2022-03-31 12:46:45 cp: cannot stat '/usr/job-ssh-keys/ecdsa-public': No such file or directory
+2022-03-31 12:46:45 + chmod 600 /usr/etc/ssh_host_rsa_key /usr/etc/ssh_host_rsa_key.pub
+2022-03-31 12:46:45 + cp /amlarc-runtime/gpu_topo /usr/bin
+2022-03-31 12:46:45 + mkdir -p /usr/local/bin
+2022-03-31 12:46:45 + cp /amlarc-runtime/init /usr/local/bin
+2022-03-31 12:46:45 bootstrap starts at Thu Mar 31 12:45:35 UTC 2022
+2022-03-31 12:46:45 Get:1 https://packages.microsoft.com/ubuntu/18.04/prod bionic InRelease [4003 B]
+2022-03-31 12:46:45 Get:2 http://ppa.launchpad.net/adiscon/v8-stable/ubuntu bionic InRelease [15.4 kB]
+2022-03-31 12:46:45 Get:3 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+2022-03-31 12:46:45 Get:4 https://packages.microsoft.com/ubuntu/18.04/prod bionic/main amd64 Packages [268 kB]
+2022-03-31 12:46:45 Hit:5 http://archive.ubuntu.com/ubuntu bionic InRelease
+2022-03-31 12:46:45 Get:6 http://archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]
+2022-03-31 12:46:45 Get:7 http://ppa.launchpad.net/adiscon/v8-stable/ubuntu bionic/main amd64 Packages [8285 B]
+2022-03-31 12:46:45 Get:8 http://archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+2022-03-31 12:46:45 Get:9 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [2678 kB]
+2022-03-31 12:46:45 Get:10 http://archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [29.8 kB]
+2022-03-31 12:46:45 Get:11 http://archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [2264 kB]
+2022-03-31 12:46:45 Get:12 http://archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [913 kB]
+2022-03-31 12:46:45 Get:13 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [878 kB]
+2022-03-31 12:46:45 Get:14 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [3123 kB]
+2022-03-31 12:46:45 Get:15 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1486 kB]
+2022-03-31 12:46:45 Get:16 http://archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [12.9 kB]
+2022-03-31 12:46:45 Get:17 http://archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [12.2 kB]
+2022-03-31 12:46:45 Fetched 11.9 MB in 5s (2342 kB/s)
+2022-03-31 12:46:45 Reading package lists...
+2022-03-31 12:46:45 
+2022-03-31 12:46:45 real	0m6.373s
+2022-03-31 12:46:45 user	0m2.809s
+2022-03-31 12:46:45 sys	0m0.414s
+2022-03-31 12:46:45 Reading package lists...
+2022-03-31 12:46:45 Building dependency tree...
+2022-03-31 12:46:45 Reading state information...
+2022-03-31 12:46:45 The following packages were automatically installed and are no longer required:
+2022-03-31 12:46:45   distro-info-data iso-codes libapt-inst2.0 lsb-release powermgmt-base
+2022-03-31 12:46:45   python-apt-common python3-apt python3-software-properties
+2022-03-31 12:46:45   unattended-upgrades
+2022-03-31 12:46:45 Use 'apt autoremove' to remove them.
+2022-03-31 12:46:45 The following NEW packages will be installed:
+2022-03-31 12:46:45   sudo
+2022-03-31 12:46:45 0 upgraded, 1 newly installed, 0 to remove and 25 not upgraded.
+2022-03-31 12:46:45 Need to get 428 kB of archives.
+2022-03-31 12:46:45 After this operation, 1765 kB of additional disk space will be used.
+2022-03-31 12:46:45 Get:1 http://archive.ubuntu.com/ubuntu bionic-updates/main amd64 sudo amd64 1.8.21p2-3ubuntu1.4 [428 kB]
+2022-03-31 12:46:45 debconf: delaying package configuration, since apt-utils is not installed
+2022-03-31 12:46:45 Fetched 428 kB in 2s (222 kB/s)
+2022-03-31 12:46:45 Selecting previously unselected package sudo.
+2022-03-31 12:46:45 (Reading database ... 
+2022-03-31 12:46:45 (Reading database ... 5%
+2022-03-31 12:46:45 (Reading database ... 10%
+2022-03-31 12:46:45 (Reading database ... 15%
+2022-03-31 12:46:45 (Reading database ... 20%
+2022-03-31 12:46:45 (Reading database ... 25%
+2022-03-31 12:46:45 (Reading database ... 30%
+2022-03-31 12:46:45 (Reading database ... 35%
+2022-03-31 12:46:45 (Reading database ... 40%
+2022-03-31 12:46:45 (Reading database ... 45%
+2022-03-31 12:46:45 (Reading database ... 50%
+2022-03-31 12:46:45 (Reading database ... 55%
+2022-03-31 12:46:45 (Reading database ... 60%
+2022-03-31 12:46:45 (Reading database ... 65%
+2022-03-31 12:46:45 (Reading database ... 70%
+2022-03-31 12:46:45 (Reading database ... 75%
+2022-03-31 12:46:45 (Reading database ... 80%
+2022-03-31 12:46:45 (Reading database ... 85%
+2022-03-31 12:46:45 (Reading database ... 90%
+2022-03-31 12:46:45 (Reading database ... 95%
+2022-03-31 12:46:45 (Reading database ... 100%
+2022-03-31 12:46:45 (Reading database ... 19198 files and directories currently installed.)
+2022-03-31 12:46:45 Preparing to unpack .../sudo_1.8.21p2-3ubuntu1.4_amd64.deb ...
+2022-03-31 12:46:45 Unpacking sudo (1.8.21p2-3ubuntu1.4) ...
+2022-03-31 12:46:45 Setting up sudo (1.8.21p2-3ubuntu1.4) ...
+2022-03-31 12:46:45 
+2022-03-31 12:46:45 real	0m3.898s
+2022-03-31 12:46:45 user	0m1.681s
+2022-03-31 12:46:45 sys	0m0.212s
+2022-03-31 12:46:45 + export DEBIAN_FRONTEND=noninteractive
+2022-03-31 12:46:45 + DEBIAN_FRONTEND=noninteractive
+2022-03-31 12:46:45 + addgroup --force-badname --gid 200513 domainusers
+2022-03-31 12:46:45 Adding group `domainusers' (GID 200513) ...
+2022-03-31 12:46:45 Done.
+2022-03-31 12:46:45 + adduser --force-badname --home /home/amluser --shell /bin/bash --uid 200513 -gecos '' --gid 200513 --disabled-password amluser
+2022-03-31 12:46:45 Warning: The home dir /home/amluser you specified already exists.
+2022-03-31 12:46:45 Adding user `amluser' ...
+2022-03-31 12:46:45 Adding new user `amluser' (200513) with group `domainusers' ...
+2022-03-31 12:46:45 adduser: Warning: The home directory `/home/amluser' does not belong to the user you are currently creating.
+2022-03-31 12:46:45 The home directory `/home/amluser' already exists.  Not copying from `/etc/skel'.
+2022-03-31 12:46:45 + set +x
+2022-03-31 12:46:45 + mkdir -p /home/amluser/.ssh
+2022-03-31 12:46:45 + chown amluser /home/amluser/ /home/amluser/.profile /home/amluser/.ssh
+2022-03-31 12:46:45 chown: cannot access '/home/amluser/.profile': No such file or directory
+2022-03-31 12:46:45 + /bin/true
+2022-03-31 12:46:45 + chmod 700 /home/amluser/.ssh
+2022-03-31 12:46:45 + '[' -d /job ']'
+2022-03-31 12:46:45 + adduser amluser sudo
+2022-03-31 12:46:45 Adding user `amluser' to group `sudo' ...
+2022-03-31 12:46:45 Adding user amluser to group sudo
+2022-03-31 12:46:45 Done.
+2022-03-31 12:46:45 + echo '%sudo ALL=(ALL) NOPASSWD:ALL'
+2022-03-31 12:46:45 + set +e
+2022-03-31 12:46:45 + AMLUSER_GROUPS_ARRAY=(${AMLUSER_GROUPS})
+2022-03-31 12:46:45 + export AMLUSER_GROUPS_ARRAY
+2022-03-31 12:46:45 + set -e
+2022-03-31 12:46:45 + CACHELESS_BLOB_ROOT=/mnt/cacheless_workspaceblobstore
+2022-03-31 12:46:45 + [[ ! -d /mnt/cacheless_workspaceblobstore ]]
+2022-03-31 12:46:45 + CACHELESS_BLOB_ROOT=/amlarc_mnt//mnt/cacheless_workspaceblobstore
+2022-03-31 12:46:45 + [[ -d /amlarc_mnt//mnt/cacheless_workspaceblobstore ]]
+2022-03-31 12:46:45 + echo cacheless blob mount not found
+2022-03-31 12:46:45 cacheless blob mount not found
+2022-03-31 12:46:45 + ln -s /workspaceblobstore/azureml/mnist-demo-on-AMLOneBox_1648730634_fe678a0e /home/amluser/snapshot
+2022-03-31 12:46:45 + set +xe
+2022-03-31 12:46:45 aml operator managed ssh connection.
+2022-03-31 12:46:45 + /etc/init.d/ssh restart
+2022-03-31 12:46:45  * Restarting OpenBSD Secure Shell server sshd
+2022-03-31 12:46:45    ...done.
+2022-03-31 12:46:45 
+2022-03-31 12:46:45 real	0m0.020s
+2022-03-31 12:46:45 user	0m0.016s
+2022-03-31 12:46:45 sys	0m0.007s
+2022-03-31 12:46:45 + test_ssh master
+2022-03-31 12:46:45 + [[ master = \p\s ]]
+2022-03-31 12:46:45 ++ seq 1 10
+2022-03-31 12:46:45 + for i in $(seq 1 10)
+2022-03-31 12:46:45 + succ=false
+2022-03-31 12:46:45 ++ date
+2022-03-31 12:46:45 + echo Thu Mar 31 12:45:46 UTC 2022 'testing self' 1
+2022-03-31 12:46:45 Thu Mar 31 12:45:46 UTC 2022 testing self 1
+2022-03-31 12:46:45 ++ hostname -i
+2022-03-31 12:46:45 + host=10.244.3.191
+2022-03-31 12:46:45 + ssh 10.244.3.191 true
+2022-03-31 12:46:45 Warning: Permanently added '10.244.3.191' (RSA) to the list of known hosts.
+2022-03-31 12:46:45 ++ ssh 10.244.3.191 'hostname -f'
+2022-03-31 12:46:45 Warning: Permanently added '10.244.3.191' (RSA) to the list of known hosts.
+2022-03-31 12:46:45 + host_fqdn=default-d39ef8ae0967a84478e4a6e07debd317-master-0.default-d39ef8ae0967a84478e4a6e07debd317.default.svc.cluster.local
+2022-03-31 12:46:45 ++ ssh 10.244.3.191 'hostname -i'
+2022-03-31 12:46:45 Warning: Permanently added '10.244.3.191' (RSA) to the list of known hosts.
+2022-03-31 12:46:45 + host_ip=10.244.3.191
+2022-03-31 12:46:45 + rtn=0
+2022-03-31 12:46:45 ++ date
+2022-03-31 12:46:45 + echo Thu Mar 31 12:45:46 UTC 2022 'done testing self' 1
+2022-03-31 12:46:45 Thu Mar 31 12:45:46 UTC 2022 done testing self 1
+2022-03-31 12:46:45 + '[' 0 -eq 0 ']'
+2022-03-31 12:46:45 + succ=true
+2022-03-31 12:46:45 + echo 'write 10.244.3.191 default-d39ef8ae0967a84478e4a6e07debd317-master-0.default-d39ef8ae0967a84478e4a6e07debd317.default.svc.cluster.local to /etc/hosts'
+2022-03-31 12:46:45 write 10.244.3.191 default-d39ef8ae0967a84478e4a6e07debd317-master-0.default-d39ef8ae0967a84478e4a6e07debd317.default.svc.cluster.local to /etc/hosts
+2022-03-31 12:46:45 + echo '10.244.3.191 default-d39ef8ae0967a84478e4a6e07debd317-master-0.default-d39ef8ae0967a84478e4a6e07debd317.default.svc.cluster.local'
+2022-03-31 12:46:45 + break
+2022-03-31 12:46:45 + '[' true = false ']'
+2022-03-31 12:46:45 + touch /amlarc-runtime/status/READY
+2022-03-31 12:46:45 + [[ master == \p\s ]]
+2022-03-31 12:46:45 + setup_env
+2022-03-31 12:46:45 + set +x
+2022-03-31 12:46:45 ++ date
+2022-03-31 12:46:45 + echo bootstrap ends at Thu Mar 31 12:45:46 UTC 2022
+2022-03-31 12:46:45 bootstrap ends at Thu Mar 31 12:45:46 UTC 2022
+2022-03-31 12:46:45 + set +e
+2022-03-31 12:46:45 + printenv AMLARC_LAUNCH_CMD
+2022-03-31 12:46:45 + chmod +x /amlarc-runtime/status/job_command.sh
+2022-03-31 12:46:45 + exec /usr/local/bin/init runuser -s /bin/bash -l amluser -c /amlarc-runtime/status/job_command.sh
+2022-03-31 12:46:45 INFO:/dlws-scripts/generic_launcher.py:/var/log/compute/local_logs folder does not exist, creating it with mod 777...
+2022-03-31 12:46:45 INFO:/dlws-scripts/generic_launcher.py:changing user command from /azureml-envs/azureml_a0ea606c1ba30965e62aafc0e194fb4e/bin/python $AZ_BATCHAI_INPUT_AZUREML/mnist-demo-on-AMLOneBox_1648730634_fe678a0e/azureml-setup/context_manager_injector.py "-i" "ProjectPythonPath:context_managers.ProjectPythonPath" "-i" "RunHistory:context_managers.RunHistory" "-i" "TrackUserError:context_managers.TrackUserError" "train.py" "--data-folder" "/nfs_share/mnist" "--regularization" "0.5" to /azureml-envs/azureml_a0ea606c1ba30965e62aafc0e194fb4e/bin/python $AZ_BATCHAI_JOB_WORK_DIR/azureml-setup/context_manager_injector.py "-i" "ProjectPythonPath:context_managers.ProjectPythonPath" "-i" "RunHistory:context_managers.RunHistory" "-i" "TrackUserError:context_managers.TrackUserError" "train.py" "--data-folder" "/nfs_share/mnist" "--regularization" "0.5", job release from /azureml-envs/azureml_a0ea606c1ba30965e62aafc0e194fb4e/bin/python $AZ_BATCHAI_JOB_MOUNT_ROOT/workspaceblobstore/azureml/mnist-demo-on-AMLOneBox_1648730634_fe678a0e/azureml-setup/job_release.py to /azureml-envs/azureml_a0ea606c1ba30965e62aafc0e194fb4e/bin/python $AZ_BATCHAI_JOB_WORK_DIR/azureml-setup/job_release.py
+2022-03-31 12:46:45 INFO:/dlws-scripts/generic_launcher.py:local run command: /azureml-envs/azureml_a0ea606c1ba30965e62aafc0e194fb4e/bin/python $AZ_BATCHAI_JOB_PREP/mnist-demo-on-AMLOneBox_1648730634_fe678a0e-setup/job_prep.py --snapshots '[{"Id":"c908ddaf-2737-40d8-982b-bb64006b0205","PathStack":["."],"SnapshotEntityId":null}]' > /var/log/compute/local_logs/65_job_prep-tvmps_${POD_NAME}_d.txt 2>&1 && cd /workspaceblobstore/azureml/mnist-demo-on-AMLOneBox_1648730634_fe678a0e && /azureml-envs/azureml_a0ea606c1ba30965e62aafc0e194fb4e/bin/python $AZ_BATCHAI_JOB_WORK_DIR/azureml-setup/context_manager_injector.py "-i" "ProjectPythonPath:context_managers.ProjectPythonPath" "-i" "RunHistory:context_managers.RunHistory" "-i" "TrackUserError:context_managers.TrackUserError" "train.py" "--data-folder" "/nfs_share/mnist" "--regularization" "0.5" > /var/log/compute/local_logs/70_driver_log.txt 2>&1 && /azureml-envs/azureml_a0ea606c1ba30965e62aafc0e194fb4e/bin/python $AZ_BATCHAI_JOB_WORK_DIR/azureml-setup/job_release.py > /var/log/compute/local_logs/75_job_post-tvmps_${POD_NAME}_d.txt 2>&1
+2022-03-31 12:48:37 [init:run] Received SIGCHLD Signal 17
+2022-03-31 12:48:37 [init:main] 2022-03-31 12:48:35.174495627 +0000 UTC Success
